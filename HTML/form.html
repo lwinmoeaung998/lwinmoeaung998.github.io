@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="request.php" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="stu-name" id="name">
+        <br><br>
+       <label for="email">Email</label>
+       <input type="email" name="stu-email" id="email">
+       <br><br>
+       <label for="phone">Phone</label>
+       <input type="number" name="stu-phone" id="phone">
+       <br><br>
+       <label for="password">Password</label>
+       <input type="password" name="stu-password" id="password">
+       <br><br>
+       <label for="dob">Date of Birth</label>
+       <input type="date" name="stu-dob" id="dob">
+       <br><br>
+       <label for="passport">Passport</label>
+       <input type="file" accept=".jng" name="stu-passport" id="passport">
+       <br><br>
+       <label for="year">Years</label>
+       <select name="stu-year" id="year">
+       <option value="">Choose Your Year</option>
+       <option value="1">First Year</option>
+       <option value="2">Second Year</option>
+       <option value="3">Third Year</option>
+       </select>
+       <br><br>
+       <label for="">Gender</label>
+       <br><br>
+       <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+       <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+       <input type="radio" name="gender" id="other" value="other"> <label for="other">Other</label>
+       <br><br>
+       <label for="">Hobby</label>
+       <br><br>
+       <input type="checkbox" name="gaming" id="gaming" value="gaming"><label for="gaming">Gaming</label>
+       <input type="checkbox" name="smoking" id="smoking" value="smoking"><label for="smoking">Smoking</label>
+       <input type="checkbox" name="listenning" id="listenning" value=""><label for="listenning">Listenning</label>
+       <BR></BR>
+       <label for="address">Address</label>
+       <textarea name="stu-address" id="address" cols="50" rows="15"></textarea>
+       <br><br>
+       <input type="time" name="" id="">
+       <input type="range" min="0" max="100" name="" id="">
+       <input type="color" name="" id="">
+       <input type="text" name="" id="" required>
+       <input type="text" name="city1" id="" value="Mandalay">
+       <input type="text" name="city2" id="" value="Yangon" readonly>
+       <input type="text" name="plac" id="" placeholder="eg.09779180478">
+       <br><br>
+       <button type="submit">Submit</button>
+      <br><br><br><br><br>
+    </form>
+</body>
+</html>
