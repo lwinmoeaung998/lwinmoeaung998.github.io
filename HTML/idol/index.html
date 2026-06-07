@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eminem</title>
-    <center>
-        <h1>Eminem</h1>
-        <p> <a href="#Description">Description</a>
-            <a href="#Filmography">Filmography</a>
-            <a href="#Comment">Comment</a>
-        </p>
-    </center>
 </head>
+  <body style="font-family: &quot;Times new Roman&quot;; text-align: center">
+        <h1>Eminem</h1>
 
-<body>
+            <a href="#description">Description</a>
+            <a href="#filmography">Filmography</a>
+            <a href="#comment">Comment</a>
+            <br><br>
+
     <center>
         <table border="1" cellspacing="0" cellpading="10" width="700">
             <tr>
-                <td rowspan="12" width="250" align="center" valign="middle">
+                <td rowspan="11" width="250" align="center" valign="middle">
                     <img src="images/home.jpg" alt="Eminem" width="300">
                 </td>
             </tr>
@@ -71,7 +70,7 @@
     </center>
     <br>
 
-    <h2 align="center">Description</h2>
+    <h2 align="center" id="description">Description</h2>
     <h3>Early life and Core Mindset</h3>
 
 
@@ -96,7 +95,7 @@
         rejection and personal struggles, his passion for lyricism and his drive to overcome poverty pushed him to
         become one of the greatest and most influential artists of all time."</p>
     <hr>
-    <h2 align="center">Filmography</h2>
+    <h2 align="center" id="filmography">Filmography</h2>
     <p align="center">List of Albums</p>
     <table align="center" border="1" cellspacing="0" width="600">
         <tr>
@@ -129,14 +128,14 @@
     <center>
         <table border="0" cellpading="5" cellspacing="0">
             <tr>
-                <td><img src="images/eminem.jpg" alt="eminem"  height="230"> </td>
-                <td><img src="images/whiterabbit.jpg" alt="White Rabbit" height="230"> </td>
-                <td><img src="images/slimshady.avif" alt="slimshady" height="230"></td>
+                <td><img src="images/eminem.jpg" width="250" height="150" alt="eminem"></td>
+                <td><img src="images/whiterabbit.jpg" width="250" height="150" alt="White Rabbit"> </td>
+                <td><img src="images/slimshady.avif" width="350" height="150" alt="slimshady"></td>
             </tr>
 
             <table>
                 <hr>
-                <h2>Leave a Commet</h2>
+                <h2 id="comment">Leave a Commet</h2>
                 <form action="request.php" method="get">
                  <label for="name">Name</label>
                     <input type="text" name="user_name" id="name">
@@ -147,11 +146,12 @@
                     <input type="email" name="user_email" id="email">
                
                 <br><br>
-                 
-                    <label for="Comment"> Commet</label>
-                    <textarea name="comment" id="comment" rows="10" cols="40"></textarea>
-                    <br><br>
-                    <button type="submit">Submit</button>
+               
+              <center>  <label for="user_comment">Comment</label> </center>
+                <textarea
+                name="user_comment" id="user_comment"cols="30" rows="8">
+            
+                </textarea>
                 
 
 
