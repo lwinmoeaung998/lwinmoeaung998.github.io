@@ -1,59 +1,266 @@
 /*Universal Selector*/
-*{
-    color: aliceblue;
+* {
+    color: rgb(32, 37, 41);
+    margin: 0;
+    padding: 0;
 }
 
 /* tag Selector/element selector*/
-h1{
+h1 {
     color: blue;
     text-align: center;
 }
+
 /*attribute selector*/
 a[title="google"] {
     color: green;
 }
-#idselector{
+/*idselector*/
+#idselector {
     color: blue;
 }
 
-.classselector{
+.classselector {
     color: red;
     text-transform: capitalize;
     font-size: 20px;
     text-indent: 50px;
 }
-.desc a{
+
+.desc a {
     color: hwb(0 0% 5%);
 }
 
-.child > a{
+.child>a {
     color: red;
 }
 
-a:link{
+a:link {
     color: red;
     text-decoration: none;
 }
-a:hover{
-    color: green;
+
+a:hover {
+    color: rgb(249, 58, 0);
     letter-spacing: 10px;
 }
 
-a:active{
+a:active {
     color: red;
     font-size: 20px;
 
 }
 
-a:visited{
-    color: purple;
+a:visited {
+    color: rgb(128, 21, 0);
 
 }
 
-:target{
+:target {
     color: red;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
+
+}
+
+.borderOne {
+    border: 2px double red;
+    color: black;
+}
+
+.borderTwo {
+    border-top: 5px solid red;
+    color: #000000;
+}
+
+.borderThree {
+    border-style: solid;
+    border-width: 5px 10px 15px 20px;
+    color: #000000;
+}
+
+.borderFour {
+    border-style: dotted dashed solid dashed;
+    border-width: 5px;
+    border-color: blue red yellow black;
+}
+
+.marginOne {
+    border: 2px solid red;
+   
+    margin-top: 50px;
+}
+
+.paddinOne {
+    border: 2px solid red;
+  
+    padding-left: 50px;
+}
+.inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+.block{
+    border: 2px solid green;
+    width: 300px;
+    display: inline-block;
+}
+ 
+/*---Float---*/
+.float_right_img{
+    width: 50%;
+    float: right;
+}
+
+/*Clear*/
+.clear{
+    clear: both;
+}
+
+.float_left_img{
+    width: 50%;
+    float: left;
+}
+ 
+/*Flex*/ 
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: red;
+}
+
+/* Grid */
+.grid{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: auto auto auto;*/
+ /* grid-row-gap: 10px;8/
+  /*grid-column-gap: 30px; */
+ /* grid-gap: 30px;*/
+  
+
+}
+
+.grid_child, .grid div{
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.row_add{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
     
 }
+.column_add{
+     grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+
+/*Media*/
+.media{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.media img{
+    width: 100%;
+}
+@media screen and (min-width: 600px){
+    .media{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .media{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*MOBILE FIRST*/
+.media{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+@media screen and (min-width: 600px){
+    .media{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 768px){
+    .media{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1024px){
+    .media{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+ /*POSITION*/
+.position_relative{
+    border: 2px solid red;
+    width: 1000px;
+    height: 500px;
+}
+.position_relative_child{
+    border: 2px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+.position_absolute{
+    border: 2px solid yellow;
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+}
+.position_absolute_child{
+        border: 2px solid blue;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+/*FONTS*/
+/*ONLINE FONTS*/
+
+.online_font {
+  font-family: "Ole", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*OFFLINE FONTS*/
+@font-face {
+    font-family: "myfonts";
+    src: url("Roboto/static/Roboto-Thin.ttf");
+}
+.offline_font{
+    font-family: "myfonts";
+}
+
+/*ICON LESSONS*/
+.icon{
+    font-size: 50px;
+}
+
