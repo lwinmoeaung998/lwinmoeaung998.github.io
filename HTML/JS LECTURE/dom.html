@@ -12,13 +12,16 @@
     <p class="myClass">My class one</p>
     <p class="myClass">My class two</p>
     <p class="myClass">My class three</p>
+
+
     <script>
         //id selector
-        let myId = document.getElementById("myId")
+
+        let myId =document.getElementById("myId")
         console.log(myId)
-        document.write(myId.innerHTML);
-        document.write("<br>)
-        document.write(myId.innerText")
+        document.write(myId.innerText);
+        document.write("<br>")
+        document.write(myId.innerText);
 
 
         //class selector
@@ -27,13 +30,23 @@
         console.log(myClass[1].innerText)
 
         //query selector
-        let myQueryId = document.querySelector
-            ("#myId");
+        let myQueryId = document.querySelector("#myId");
         console.log(myQueryId.innerText)
 
-        let myQueryClass = document.querySelector
-            (".myClass")
-        console.log(myqueryClass.innerText)
+        let myQueryClass = document.querySelector(".myClass")
+        console.log(myQueryClass.innerText);
+
+      //tag selector 
+      let myTag = document.getElementsByTagName("p");
+      console.log(myTag[2].innerText);
+
+      //querySelectorAll
+      let myALL = document.querySelectorAll(".myClass");
+      console.log(myALL[0].innerText);
+       
+
+     
+
     </script>
 </body>
 

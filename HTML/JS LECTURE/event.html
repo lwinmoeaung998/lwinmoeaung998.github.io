@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Events</h1>
+    <img src="images/waterfall.jpg" alt="" width="200" height="200" onmouseover="big()" id="myImg"
+        onmouseleave="normal()">
+
+    <input type="text" onchange="result()" id="myInput">
+    <p id="myP">
+
+    </p>
+
+    <script>
+        //ommouseover
+        function big() {
+            let myImg = document.getElementById("myImg");
+            myImg.style.width = '400px';
+            myImg.style.height = '400px';
+            myImg.style.borderRadius = '5px';
+
+        }
+        //onmouseleave
+        function normal() {
+            let myImg = document.getElementById("myImg");
+            myImg.style.width = '200px';
+            myImg.style.height = '200px';
+            myImg.style.borderRadius = '0px';
+
+        }
+        //onKeyUp onKeyDown ONcHANGE
+
+        function result(){
+            let myInput = document.getElementById('myInput');
+            let result = myInput.value;
+            let myP = document.getElementById('myP');
+            myP.innerText = result;
+        }
+
+
+        
+
+    </script>
+</body>
+
+</html>

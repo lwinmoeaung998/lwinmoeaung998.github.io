@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>String</h1>
+
+    <script>
+        //String Concatnation
+        let firstName = "Stoner";
+        let lastName = "Moe Gyi";
+        //  let fullName = firstName +" "+ lastName;
+
+        // let fullName = `${firstName} ${lastName}`;
+
+        //let fullName = "<h1> my name is " + firstName + " "+ lastName + "</h1>";
+        let fullName = `<h1> My name is ${firstName} ${lastName}`;
+            let fullName2 = firstName.concat("<h1>",' ',lastName,"<h1>");
+            document.write(fullName2);
+
+        document.write(fullName);
+
+        document.write(fullName.toLocaleUpperCase()+"<br>");
+
+        let name = "My name is Stoner Moe Gyi";
+        document.write(name.substr(11)+"<br>");
+
+        let job = "Developer               jesus                 level";
+        document.write(job.trim()+"<br>");
+
+        let moez = "My name is Stoner Moe Gyi"
+        console.log(moez.search("Stoner"));
+        console.log(moez.indexOf("name"));
+
+        let chan = "My name is Stoner Moe Gyi";
+        document.write(chan.replace("Stoner","pure"))
+        document.write('<br>');
+
+        document.write("I'm higher self men");
+
+        document.write(`<br>`);
+
+        document.write("'I\'m higher self men'");
+        document.write(`<br>`);
+
+        document.write("I'm higher self men,1'4\"");
+        document.write(`<br>`);
+        document.write(`I'm beauty self men`);
+
+        let num = '1,32324, 299, 4444,33333123';
+        console.log(num.replace(/\,/g,' '))
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

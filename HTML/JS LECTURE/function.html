@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        //Named fuction
+        
+        function sayHi(){
+            document.write("Hello World");
+        }
+
+        sayHi();
+
+        //fuction with paratemers
+        function sum(num1,num2){
+            let result = num1 + num2;
+            document.write(`<br> your result is ${result}`);
+
+        }
+        sum(10,20);
+
+        //Dafult function
+
+        function mult(num3=50, num4=30){
+            let result = num3*num4;
+            document.write(`<br>the multiplication of ${num3} and ${num4} is ${result}`);
+
+        }
+        mult();
+
+        //function with return
+        function sub(num1,num2){
+            let result = num1-num2
+            return result;
+        
+        }
+       let data = sub(220,25);
+       document.write(data);
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

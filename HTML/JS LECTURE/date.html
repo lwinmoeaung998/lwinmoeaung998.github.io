@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>date</h1>
+    <p id="time">time</p>
+    <p id="minutes">minutes</p>
+
+    <script>
+
+        //date
+        //index from 0 in year  day month 
+        let date = new Date();
+        console.log(date);
+
+        let getYear = date.getFullYear();
+        console.log(getYear);
+
+        let getMonth = date.getMonth();
+        console.log(getMonth);
+
+        let getDay = date.getDay();
+        console.log(getDay);
+
+        let getTimeZone = date.toLocaleTimeString();
+        console.log(getTimeZone);
+
+        function getDateFormat(){
+            let myDate = new Date();
+            let getSeconds = myDate.getSeconds();
+           let time = document.getElementById("time");
+           time.innerHTML = getSeconds;
+        }
+        //getDateFormat
+        setInterval(getDateFormat,1000);
+
+
+
+         
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
